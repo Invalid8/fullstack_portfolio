@@ -1,0 +1,207 @@
+.centerize {
+  display: grid;
+  align-items: center;
+  /* place-content: center; */
+  font-weight: 900;
+}
+
+.imgBox {
+  overflow: hidden;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.flex {
+  display: flex;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.j-sp {
+  justify-content: space-between;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+/* small chops */
+
+.x0-gap-row {
+  row-gap: 0;
+}
+
+.x0-gap-col {
+  column-gap: 0;
+}
+
+.x2-gap {
+  gap: 2px;
+}
+
+.x5-gap {
+  gap: 5px;
+}
+
+.x10-gap {
+  gap: 10px;
+}
+
+.x20-gap {
+  gap: 20px;
+}
+
+.x30-gap {
+  gap: 30px;
+}
+
+.x40-gap {
+  gap: 30px;
+}
+
+.is-1 {
+  font-size: 10px;
+}
+
+.is-2 {
+  font-size: 20px;
+}
+
+.is-2_5 {
+  font-size: 25px;
+}
+
+.is-3 {
+  font-size: 30px;
+}
+
+.is-3_5 {
+  font-size: 35px;
+}
+
+.is-4 {
+  font-size: 40px;
+}
+
+.is-5 {
+  font-size: 50px;
+}
+
+.cap-txt {
+  text-transform: capitalize;
+}
+
+.upp-txt {
+  text-transform: uppercase;
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto1 {
+  overflow: auto !important;
+}
+
+.o-hidden-x {
+  overflow-x: hidden;
+}
+
+.o-hidden-y {
+  overflow-y: hidden;
+}
+
+.relative-p {
+  position: relative;
+}
+
+.absolute-p {
+  position: absolute;
+}
+
+.fixed-p {
+  position: fixed;
+}
+
+.op-1 {
+  opacity: 1;
+}
+
+.op-05 {
+  opacity: 0.5;
+}
+
+.op-06 {
+  opacity: 0.6;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-7 {
+  font-weight: 700;
+}
+
+.fw-8 {
+  font-weight: 800;
+}
+
+.fw-9 {
+  font-weight: 900;
+}
+
+a.mod {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-j {
+  text-align: justify;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/* end small chops */

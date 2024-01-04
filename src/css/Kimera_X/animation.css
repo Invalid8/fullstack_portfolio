@@ -1,0 +1,42 @@
+.img-txt {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sep {
+    animation: sep 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+
+    line-height: 0em;
+
+    overflow: hidden;
+}
+
+@keyframes sep {
+    0% {
+        line-height: 0em;
+    }
+
+    25% {
+        line-height: calc(0.5em / 2);
+    }
+
+    50% {
+        line-height: calc(0);
+    }
+
+    75% {
+        line-height: calc(0.5em / 2);
+    }
+
+    100% {
+        line-height: 0em;
+    }
+}
