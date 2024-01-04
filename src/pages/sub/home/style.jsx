@@ -160,8 +160,8 @@ const Expert = styled.div`
     bottom: -10px;
     width: 100%;
     max-width: 150px;
-    height: 2px;
-    background-color: var(--m-white);
+    height: 4px;
+    background-color: var(--sub);
     opacity: 0.4;
   }
 
@@ -172,7 +172,7 @@ const Expert = styled.div`
   }
 
   & .b-descr .unveil {
-    /* background-color: var(--m-white); */
+    /* background-color: var(--sub-o); */
     position: absolute;
     top: 0;
     left: 0;

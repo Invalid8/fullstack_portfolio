@@ -92,11 +92,11 @@ const Dusty = styled.div`
   }
 
   & .moon::after {
-    background-image: url("/assets/image/the-moon.svg");
+    background-image: url("/assets/image/outcast/the-moon.svg");
   }
 
   & .sun::after {
-    background-image: url("/assets/image/sun.svg");
+    background-image: url("/assets/image/outcast/sun.svg");
   }
 
   @keyframes float {

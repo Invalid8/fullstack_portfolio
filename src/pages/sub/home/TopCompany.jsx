@@ -77,6 +77,14 @@ const stacks = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim debitis dicta. `,
     img: "/assets/image/skill/graphic-design.svg",
   },
+  {
+    id: 11,
+    key: "vite",
+    value: "Vite",
+    skillLevel: 75,
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim debitis dicta. `,
+    img: "/assets/image/skill/vite.svg",
+  },
 ];
 
 export default function Skills() {

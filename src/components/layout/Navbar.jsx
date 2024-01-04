@@ -6,6 +6,7 @@ import { Equalize, ScrollTo } from "../../functions/ScrollTo";
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { day, night } from "../../data/ThemeConstants";
+import Socials from "./Socials";
 
 const def = [
   {
@@ -227,6 +228,7 @@ const Navbar = () => {
                   </button>
                 )}
               </li>
+              {open && <Socials />}
             </ul>
             <button
               className="menu mobile-nav-toggle"

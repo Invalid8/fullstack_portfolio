@@ -1,4 +1,9 @@
-import { ScreenO, Title } from "../../../components/layout";
+import {
+  ScreenO,
+  Socials,
+  ThemeWrappper,
+  Title,
+} from "../../../components/layout";
 
 const Contact = () => {
   return (
@@ -35,7 +40,13 @@ const Contact = () => {
                   <p>+234 703 479 7467</p>
                 </div>
               </div>
-              <div className="embededMap w-100 h-100 bg-dark">
+              <ThemeWrappper>
+                <div className="bottom-tier p-4 px-2 d-flex flex-column ai-c x10-gap">
+                  <h4>Social Links</h4>
+                  <Socials />
+                </div>
+              </ThemeWrappper>
+              {/* <div className="embededMap w-100 h-100 bg-dark">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.819767969889!2d3.2709210209300643!3d6.5444290801264495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8f94e5548ecf%3A0x1679579032bac15b!2sBAFUTO%20INSTITUTE%20OF%20MANAGEMENT%20AND%20INFORMATION%20TECHNOLOGY!5e0!3m2!1sen!2sng!4v1670507233704!5m2!1sen!2sng"
                   style={{ border: 0 }}
@@ -44,7 +55,7 @@ const Contact = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                   title="location"
                 ></iframe>
-              </div>
+              </div> */}
             </div>
 
             <div

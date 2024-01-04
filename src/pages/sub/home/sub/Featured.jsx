@@ -8,7 +8,7 @@ const featured = [
     name: "Reader X App",
     link: { web: "https://manga-reader-frontend.vercel.app/", repo: "" },
     upcoming: false,
-    img: { link: "/assets/image/Reader_X.png", isDesktop: true },
+    img: { link: "/assets/image/websites/Reader_X.png", isDesktop: true },
   },
   {
     name: "Sync Dashboard",
@@ -20,19 +20,19 @@ const featured = [
     name: "Fruit Tac Toe",
     link: { web: "https://fruit-tac-toe.netlify.app/", repo: "" },
     upcoming: false,
-    img: { link: "/assets/image/large/f4.png", isDesktop: true },
+    img: { link: "/assets/image/websites/4.png", isDesktop: true },
   },
   {
     name: "Tacky Fruits",
     link: { web: "#", repo: "" },
     upcoming: true,
-    img: { link: "/assets/image/tacky-fruit2.png", isDesktop: true },
+    img: { link: "/assets/image/websites/tacky-fruit2.png", isDesktop: true },
   },
   {
     name: "Chat Buddy",
     link: { web: "#", repo: "" },
     upcoming: true,
-    img: { link: "assets/image/chat-buddy.png", isDesktop: true },
+    img: { link: "assets/image/websites/chat-buddy.png", isDesktop: true },
   },
 ];
 
