@@ -14,7 +14,7 @@ const featured = [
     name: "Sync Dashboard",
     link: { web: "https://sync-dash.netlify.app/", repo: "" },
     upcoming: false,
-    img: { link: "/assets/image/sync-dash.png", isDesktop: true },
+    img: { link: "/assets/image/websites/sync-dash.png", isDesktop: true },
   },
   {
     name: "Fruit Tac Toe",
@@ -41,7 +41,7 @@ const Featured = () => {
     <div className="featured" id="Featured">
       <ScreenO className={"centerize"}>
         <Fret className="d-flex ai-c x30-gap jc-c bend-840 py-4 position-relative">
-          <div className="desc w-100">
+          <div className="desc w-100 wow slideInUp">
             <Title>Projects</Title>
             <div className="inner">
               <p>
@@ -58,7 +58,7 @@ const Featured = () => {
               </p>
             </div>
           </div>
-          <div className="hold d-flex flex-wrap x30-gap custom-scroll-bar w-full pb-5">
+          <div className="hold d-flex flex-wrap x30-gap custom-scroll-bar w-full pb-5 wow zoomIn">
             <PicCards
               animate
               time={5000}
@@ -150,7 +150,7 @@ const Featured = () => {
             </PicCards>
           </div>
           <div
-            className="downer position-absolute animated wow slideInUp"
+            className="downer position-absolute wow wow slideInUp"
             style={{ bottom: "0px" }}
           >
             <button

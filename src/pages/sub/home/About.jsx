@@ -16,14 +16,11 @@ const About = () => {
         <div className="inner d-flex x30-gap jc-c p-2 py-4 ai-c jc-c bend-840 overflow-hidden relative">
           <PicCards
             images={images}
-            className="aos-init aos-animate animated wow zoomIn w-100 max-width-600 m-auto d-flex ai-c jc-c"
-            data-aos="zoom-in"
+            className="wow zoomIn w-100 max-width-600 m-auto d-flex ai-c jc-c"
           ></PicCards>
           <div
             style={{ fontSize: "calc(100% + 0.35vmin)" }}
-            className="boxy w-100 d-flex flex-column x0-gap aos-init aos-animate animated wow slideInUp max-width-600"
-            data-aos="fade-up"
-            data-aos-delay="200"
+            className="boxy w-100 d-flex flex-column x0-gap wow slideInUp max-width-600"
           >
             <Title>About Me</Title>
             <div>
@@ -57,7 +54,7 @@ const About = () => {
           </div>
           <div className="downer position-absolute" style={{ bottom: "0px" }}>
             <button
-              className="down fw-9 animated wow slideInUp"
+              className="down fw-9 wow wow slideInUp"
               style={{ backgroundColor: "transparent", color: "inherit" }}
               onClick={() => {
                 ScrollTo("#Expertise");

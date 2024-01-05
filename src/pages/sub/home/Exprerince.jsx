@@ -75,7 +75,7 @@ const exps = [
 
 const Expery = ({ exp, index }) => {
   return (
-    <div className="expery d-flex flex-column w-100">
+    <div className="expery d-flex flex-column w-100 wow slideInLeft fast">
       <div
         data-bs-toggle="collapse"
         className="question collapsed d-flex ai-c x20-gap"
@@ -83,8 +83,9 @@ const Expery = ({ exp, index }) => {
         aria-expanded="false"
       >
         <div className="job d-flex justify-content-between ai-c w-100 x30-gap h-100">
-          <p className="title fw-5 m-0 cap-txt d-flex x5-gap fw-9">
-            <span>{exp.position.title} @</span>
+          <p className="title fw-5 m-0 cap-txt d-flex x10-gap ai-c fw-9">
+            <span>{exp.position.title}</span>
+            <span>-</span>
             <span>{exp.company.name}</span>
           </p>
           <p className="date m-0">{exp.position.duration}</p>

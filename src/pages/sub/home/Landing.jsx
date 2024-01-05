@@ -51,21 +51,13 @@ const Landing = () => {
           <div className="boxy h-full">
             <Naming id="trip">
               <Triple num={1}>
-                <span
-                  className="name animated wow bounce"
-                  ref={val}
-                  data-reverse={false}
-                >
+                <span className="name" ref={val} data-reverse={false}>
                   <h1 className="upp-txt big bg-dangers" ref={naming}></h1>
                 </span>
               </Triple>
-              <div className="hit">
-                <h3 className="upp-txt animated wow slideInUp">
-                  Fullstack JavaScript Web Developer
-                </h3>
-                <h3 className="upp-txt animated wow slideInUp">
-                  Junior Software Enginner
-                </h3>
+              <div className="hit wow slideInUp">
+                <h3 className="upp-txt">Fullstack JavaScript Web Developer</h3>
+                <h3 className="upp-txt">Junior Software Enginner</h3>
               </div>
             </Naming>
           </div>

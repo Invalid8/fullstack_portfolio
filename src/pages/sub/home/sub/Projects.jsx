@@ -132,7 +132,7 @@ const stacks = [
 const Stack = ({ stack }) => {
   return (
     <ThemeWrappper
-      className={`rounded animated wow ${
+      className={`rounded wow ${
         !stack ? `glow slower infinite` : "fadeIn faster"
       }`}
     >

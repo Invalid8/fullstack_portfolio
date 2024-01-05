@@ -125,7 +125,7 @@ const PicCards = ({
       <Pics
         className={`${
           IMGS && IMGS.length === 0 && "none"
-        } ${className} animated wow`}
+        } ${className} wow wow`}
         style={style}
         ref={container}
       >
@@ -133,7 +133,7 @@ const PicCards = ({
           IMGS.map((e, index) => {
             return e.isChild ? (
               <div
-                className={`store animated wow ${
+                className={`store wow wow ${
                   selectedImgID && selectedImgID.includes(e.id)
                     ? "show"
                     : "hide"

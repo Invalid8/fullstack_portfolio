@@ -123,7 +123,7 @@ export default function Skills() {
                 {stacky.map((stack, index) => {
                   return (
                     <div
-                      className="Slogo"
+                      className="Slogo wow zoomIn"
                       key={`${stack.key}-${index}`}
                       title={stack.value}
                     >

@@ -128,7 +128,7 @@ const Expertise = () => {
 
 const ExpertModal = ({ r, viewID, setViewID }) => {
   return (
-    <ThemeWrappper className="rounded">
+    <ThemeWrappper className="rounded wow zoomIn">
       <Expert
         onMouseOver={() => {
           setViewID(r.id);

@@ -131,9 +131,7 @@ const Navbar = () => {
 
           <nav
             id="navbar"
-            className={`navbar ${
-              open && "navbar-mobile animated wow fadeIn fast"
-            }`}
+            className={`navbar ${open && "navbar-mobile animated fadeIn fast"}`}
           >
             <ul className="nana" ref={nana}>
               {def.map((d, index) => {
@@ -237,7 +235,9 @@ const Navbar = () => {
                 setOpen(!open);
               }}
             >
-              <i className={`bi ${open ? "bi-x" : "bi-list"} icon is-4`}></i>
+              <i
+                className={`bi ${open ? "bi-x is-5" : "bi-list"} icon is-4`}
+              ></i>
             </button>
           </nav>
         </div>

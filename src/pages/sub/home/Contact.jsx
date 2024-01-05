@@ -9,18 +9,11 @@ const Contact = () => {
   return (
     <div id="Contact" className="contact">
       <ScreenO className={"centerize"}>
-        <div
-          className="boxed container aos-init aos-animate"
-          data-aos="fade-up"
-        >
+        <div className="boxed container wow fadeUp">
           <Title>Contact Me</Title>
 
           <div className="row">
-            <div
-              className="col-lg-5 d-flex flex-column align-items-stretch aos-init aos-animate"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <div className="col-lg-5 d-flex flex-column align-items-stretch wow zoomIn">
               <div className="info">
                 <div className="address">
                   <i className="bi bi-geo-alt"></i>
@@ -58,11 +51,7 @@ const Contact = () => {
               </div> */}
             </div>
 
-            <div
-              className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch aos-init aos-animate"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+            <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch wow zoomIn">
               <form
                 action="forms/contact.php"
                 method="post"
