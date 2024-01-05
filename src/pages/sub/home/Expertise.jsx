@@ -93,10 +93,10 @@ const Expertise = () => {
 
   return (
     <div
-      className="w-full expertise relative-positon custom-scroll-bar"
+      className="w-100 expertise relative-positon custom-scroll-bar"
       id="Expertise"
     >
-      <div className="centerize p-4">
+      <div className="centerize">
         <div className="inner py-4 d-flex x5-gap flex-column">
           <Title>My Expertise</Title>
           <div className="nooby d-flex flex-column ai-c jc-c">

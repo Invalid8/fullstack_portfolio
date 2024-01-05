@@ -13,7 +13,7 @@ const Home = () => {
     <div className="home d-flex flex-column">
       <Landing />
       <About />
-      <div className={"centerize svh-100"}>
+      <div className={"centerize svh-100 w-100"}>
         <Expertise />
         <Skills />
       </div>

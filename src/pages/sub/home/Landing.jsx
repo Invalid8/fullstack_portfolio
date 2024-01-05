@@ -51,13 +51,15 @@ const Landing = () => {
           <div className="boxy h-full">
             <Naming id="trip">
               <Triple num={1}>
-                <span className="name" ref={val} data-reverse={false}>
-                  <h1 className="upp-txt big bg-dangers" ref={naming}></h1>
-                </span>
+                <h1 className="name" ref={val} data-reverse={false}>
+                  <span className="upp-txt big bg-dangers" ref={naming}></span>
+                </h1>
               </Triple>
               <div className="hit wow slideInUp">
-                <h3 className="upp-txt">Fullstack JavaScript Web Developer</h3>
-                <h3 className="upp-txt">Junior Software Enginner</h3>
+                <h3 className="cap-txt d-flex flex-column">
+                  <span>Fullstack JavaScript Web Developer</span>
+                  <span>Junior Software Enginner </span>
+                </h3>
               </div>
             </Naming>
           </div>
@@ -163,6 +165,12 @@ const Naming = styled.span`
 
     & > p {
       font-size: calc(100% + 0.025vmin);
+    }
+  }
+
+  @media (max-width: 360px) {
+    & .big {
+      font-size: calc(1.6rem);
     }
   }
 `;

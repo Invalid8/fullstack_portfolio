@@ -126,7 +126,10 @@ const Featured = () => {
                           rel="noreferrer"
                           className="mod"
                         >
-                          <button className="bg-s-o d-flex ai-c x5-gap">
+                          <button
+                            name={`featured_${f.name}`}
+                            className="bg-s-o d-flex ai-c x5-gap"
+                          >
                             <i className="bx bx-link-external is-2"></i>
                             <span>View Project</span>
                           </button>
@@ -154,6 +157,7 @@ const Featured = () => {
             style={{ bottom: "0px" }}
           >
             <button
+              name="goDown_btn"
               className="down fw-9"
               style={{ backgroundColor: "transparent", color: "inherit" }}
               onClick={() => {

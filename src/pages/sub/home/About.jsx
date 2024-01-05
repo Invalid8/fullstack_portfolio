@@ -44,7 +44,10 @@ const About = () => {
                   href="/assets/others/my-cv.pdf"
                   className="mod"
                 >
-                  <button className="go-on invet d-flex x5-gap ai-c p-2 px-4 rounded fw-bold float-right user-select-none bg-s-o">
+                  <button
+                    name="download_btn"
+                    className="go-on invet d-flex x5-gap ai-c p-2 px-4 rounded fw-bold float-right user-select-none bg-s-o"
+                  >
                     <i className="bx bxs-download"></i>
                     <span>Download CV</span>
                   </button>
@@ -54,6 +57,7 @@ const About = () => {
           </div>
           <div className="downer position-absolute" style={{ bottom: "0px" }}>
             <button
+              name="goto_btn"
               className="down fw-9 wow wow slideInUp"
               style={{ backgroundColor: "transparent", color: "inherit" }}
               onClick={() => {

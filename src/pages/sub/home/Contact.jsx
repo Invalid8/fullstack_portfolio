@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div id="Contact" className="contact">
       <ScreenO className={"centerize"}>
-        <div className="boxed container wow fadeUp">
+        <div className="boxed container wow fadeUp w-100 overflowX-auto custom-scroll-bar thin">
           <Title>Contact Me</Title>
 
           <div className="row">
@@ -53,10 +53,13 @@ const Contact = () => {
 
             <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch wow zoomIn">
               <form
-                action="forms/contact.php"
+                action=""
                 method="post"
                 role="form"
                 className="php-email-form"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                }}
               >
                 <div className="row">
                   <div className="form-group col-md-6">
@@ -110,7 +113,9 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <button type="submit">Send Message</button>
+                  <button name="submit_btn" type="submit">
+                    Send Message
+                  </button>
                 </div>
               </form>
             </div>

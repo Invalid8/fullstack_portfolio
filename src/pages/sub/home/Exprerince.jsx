@@ -129,7 +129,7 @@ const Expery = ({ exp, index }) => {
             <div className="technologies d-flex flex-wrap x5-gap">
               {exp.skills.map((e, index) => {
                 return (
-                  <button className="technology" key={index}>
+                  <button name={e} className="technology" key={index}>
                     {e}
                   </button>
                 );
@@ -156,15 +156,11 @@ const Expery = ({ exp, index }) => {
 
 const Experience = () => {
   return (
-    <ThemeWrappper id="Experience" className="faq">
+    <ThemeWrappper id="Experience" className="faq w-100">
       <ScreenO className={"centerize"}>
-        <div className="aos-init aos-animate" data-aos="fade-up">
+        <div className="dd overflowX-auto custom-scroll-bar thin">
           <Title>WORK EXPRERINCE</Title>
-          <Exes
-            className="faq-list aos-init aos-animate max-width-540"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <Exes className="faq-list" data-aos-delay="100">
             {exps.map((exp, index) => {
               return <Expery index={index} exp={exp} key={`#faq${index}`} />;
             })}

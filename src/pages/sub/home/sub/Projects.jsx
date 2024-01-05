@@ -179,6 +179,7 @@ const Projects = () => {
             <h4 className="m-0">Filter by:</h4>
             <div className="locates d-flex flex-wrap x20-gap ai-c user-select-none">
               <button
+                name={`locator_btn_1`}
                 className={`locate ${!select && "select"}`}
                 onClick={() => {
                   setSelect(null);
@@ -189,6 +190,7 @@ const Projects = () => {
               </button>
               <span className="sp">/</span>
               <button
+                name={`locator_btn_2`}
                 className={`locate ${select === webDevelopment && "select"}`}
                 onClick={() => {
                   setSelect(webDevelopment);
@@ -199,6 +201,7 @@ const Projects = () => {
               </button>
               <span className="sp">/</span>
               <button
+                name={`locator_btn_3`}
                 className={`locate ${select === programming && "select"}`}
                 onClick={() => {
                   setSelect(programming);
@@ -222,12 +225,12 @@ const Projects = () => {
                       return <Stack stack={stack} key={stack.key} />;
                     })}
             </PicCards>
-            <ThemeWrappper className={"p-2 px-3 rounded-3 mt-4"}>
-              <span className="h5">
-                And Many More projects I can{"'"}t disclose 🙂
-              </span>
-            </ThemeWrappper>
           </div>
+          <ThemeWrappper className={"p-2 px-3 rounded-3 mt-4"}>
+            <span className="h5">
+              And Many More projects I can{"'"}t disclose 🙂
+            </span>
+          </ThemeWrappper>
         </Bret>
       </ScreenO>
     </div>

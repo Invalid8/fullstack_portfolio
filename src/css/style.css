@@ -84,3 +84,8 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+.overflowX-auto {
+  overflow-x: auto;
+  overflow-y: hidden;
+}

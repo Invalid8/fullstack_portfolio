@@ -81,6 +81,7 @@ const PicCards = ({
   const GoTo = (ID, control = "NULL") => {
     if (!ID) {
       console.log("parameter missing ");
+      setSelectedImgID(folds[0]);
       return false;
     }
 
@@ -160,6 +161,7 @@ const PicCards = ({
           <div className="arrow-controls">
             <button
               className="is-2 prev"
+              name="previous"
               onClick={() => {
                 GoTo(selectedImgID, PREV);
               }}
@@ -168,6 +170,7 @@ const PicCards = ({
             </button>
             <button
               className="is-2 next"
+              name="next"
               onClick={() => {
                 GoTo(selectedImgID, NEXT);
               }}
@@ -188,12 +191,12 @@ const PicCards = ({
           {folds.map((e, index) => {
             return (
               <button
+                name={`goto${index}`}
                 className={`dot ${
                   JSON.stringify(e) === JSON.stringify(selectedImgID) &&
                   "clicked"
                 }`}
                 key={`button${index}`}
-                data-image={e.img}
                 onClick={() => {
                   GoTo(e);
                 }}

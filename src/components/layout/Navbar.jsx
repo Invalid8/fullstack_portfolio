@@ -131,9 +131,11 @@ const Navbar = () => {
 
           <nav
             id="navbar"
-            className={`navbar ${open && "navbar-mobile animated fadeIn fast"}`}
+            className={`navbar ${
+              open && "navbar-mobile animated fadeIn fast"
+            } `}
           >
-            <ul className="nana" ref={nana}>
+            <ul className="nana custom-scroll-bar" ref={nana}>
               {def.map((d, index) => {
                 return (
                   <li key={index} className={d.dropdown ? "dropdown" : ""}>
@@ -172,7 +174,7 @@ const Navbar = () => {
                       )}
                     </a>
                     {d.dropdown && (
-                      <ul>
+                      <ul className="custom-scroll-bar">
                         {d.sub.map((d, index) => {
                           return (
                             <li key={index}>
@@ -201,6 +203,7 @@ const Navbar = () => {
               <li>
                 {theme === day && (
                   <button
+                    name="theme_button_day"
                     className="getstarted d-flex x5-gap ai-c fw-9 scrollto w-full rounded-2 text-decoration-none"
                     style={{ width: "fit-content" }}
                     href="#about"
@@ -214,6 +217,7 @@ const Navbar = () => {
                 )}
                 {theme === night && (
                   <button
+                    name="theme_button_night"
                     className="getstarted d-flex x5-gap ai-c fw-9 scrollto w-full rounded-2 text-decoration-none"
                     style={{ width: "fit-content" }}
                     href="#about"
@@ -229,6 +233,7 @@ const Navbar = () => {
               {open && <Socials />}
             </ul>
             <button
+              name="menu_toggle_button"
               className="menu mobile-nav-toggle"
               id="menuBtn"
               onClick={() => {
