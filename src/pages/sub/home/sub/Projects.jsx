@@ -145,7 +145,11 @@ const Stack = ({ stack }) => {
             {stack && (
               <>
                 <h6 className="cap-txt m-0">{stack.name}</h6>
-                <p className="m-0">{stack.description}</p>
+                <p className="m-0">
+                  {stack.description.length <= 50
+                    ? stack.description.split(0, 50)
+                    : `${stack.description.split(0, 50)}...`}
+                </p>
                 <div className="link">
                   <span className="web-link d-flex justify-content-end">
                     <a
