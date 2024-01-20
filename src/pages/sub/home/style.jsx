@@ -29,8 +29,7 @@ const Fret = styled.div`
 
     /* aspect-ratio: 2/1;
     border-radius: 8px;
-    border: 5px solid var(--sub);
-    overflow: hidden; */
+    border: 5px solid var(--sub);*/
   }
 
   & .evidence .evidence-img.mobile {
@@ -39,8 +38,9 @@ const Fret = styled.div`
   }
 
   & .evidence .evidence-img.desktop {
-    height: calc(200px + 10vmin);
+    height: auto;
     min-height: 100px;
+    width: 300px;
     max-height: 300px;
   }
 
