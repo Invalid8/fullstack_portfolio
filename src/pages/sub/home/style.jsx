@@ -27,10 +27,10 @@ const Fret = styled.div`
     height: 100%;
     width: 100%;
 
-    /* aspect-ratio: 2/1; */
+    /* aspect-ratio: 2/1;
     border-radius: 8px;
     border: 5px solid var(--sub);
-    overflow: hidden;
+    overflow: hidden; */
   }
 
   & .evidence .evidence-img.mobile {
