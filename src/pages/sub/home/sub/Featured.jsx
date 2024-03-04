@@ -24,8 +24,8 @@ const featured = [
   },
   {
     name: "Tacky Fruits",
-    link: { web: "#", repo: "" },
-    upcoming: true,
+    link: { web: "https://tackyfruits.vercel.app/", repo: "" },
+    upcoming: false,
     img: { link: "/assets/image/websites/tacky-fruit2.png", isDesktop: true },
   },
   {

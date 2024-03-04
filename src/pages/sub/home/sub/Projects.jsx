@@ -9,6 +9,19 @@ const [webDevelopment, programming] = ["web_development", "programming"];
 
 const stacks = [
   {
+    id: 7665,
+    key: "tackyfruits",
+    dataType: "web_development",
+    name: "Tacky Fruits",
+    description: `A web based game application with customizable UI that useses socket technology as means of connection.`,
+    image: "/assets/image/websites/tacky-fruit2.png",
+    webViewImg: [],
+    link: {
+      git: "",
+      host: "https://tackyfruits.vercel.app/",
+    },
+  },
+  {
     id: 1,
     key: "readerx",
     dataType: "web_development",
@@ -145,7 +158,12 @@ const Stack = ({ stack }) => {
             {stack && (
               <>
                 <h6 className="cap-txt m-0">{stack.name}</h6>
-                <p className="m-0">
+                <p
+                  className="m-0 overflow-hidden"
+                  style={{
+                    maxHeight: "64px",
+                  }}
+                >
                   {stack.description.length <= 50
                     ? stack.description.split(0, 50)
                     : `${stack.description.split(0, 50)}...`}
