@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1321",
+        "icon": "bx bx-code-alt",
+        "role": "frontend developement",
+        "description": "Over 4 years of development with various frontend technologies such as HTML, CSS, JS, React, e.t.c.",
+        "stacks": [],
+        "type": "front"
+    },
+    {
+        "id": "3245",
+        "icon": "bx bx-code-curly",
+        "role": "backend developement",
+        "description": "Skilled in developing backend code that performs various functions such as authentication, authorization and db management systems and many more.",
+        "stacks": [],
+        "type": "back"
+    },
+    {
+        "id": "5335",
+        "icon": "bx bx-chip",
+        "role": "software development",
+        "description": "Currently on my path in becoming a software engineer that can work with and create system architecture and design.",
+        "stacks": [],
+        "type": "front"
+    }
+]

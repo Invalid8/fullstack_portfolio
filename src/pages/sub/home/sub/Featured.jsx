@@ -2,39 +2,7 @@ import { PicCards } from "../../../../components/design";
 import { ScreenO, Title } from "../../../../components/layout";
 import { ScrollTo } from "../../../../functions/ScrollTo";
 import { Fret } from "../style";
-
-const featured = [
-  {
-    name: "Reader X App",
-    link: { web: "https://manga-reader-frontend.vercel.app/", repo: "" },
-    upcoming: false,
-    img: { link: "/assets/image/websites/Reader_X.png", isDesktop: true },
-  },
-  {
-    name: "Sync Dashboard",
-    link: { web: "https://sync-dash.netlify.app/", repo: "" },
-    upcoming: false,
-    img: { link: "/assets/image/websites/sync-dash.png", isDesktop: true },
-  },
-  {
-    name: "Fruit Tac Toe",
-    link: { web: "https://fruit-tac-toe.netlify.app/", repo: "" },
-    upcoming: false,
-    img: { link: "/assets/image/websites/4.png", isDesktop: true },
-  },
-  {
-    name: "Tacky Fruits",
-    link: { web: "https://tackyfruits.vercel.app/", repo: "" },
-    upcoming: false,
-    img: { link: "/assets/image/websites/tacky-fruit2.png", isDesktop: true },
-  },
-  {
-    name: "Chat Buddy",
-    link: { web: "#", repo: "" },
-    upcoming: true,
-    img: { link: "assets/image/websites/chat-buddy.png", isDesktop: true },
-  },
-];
+import featured from "../../../../data/featured.json";
 
 const Featured = () => {
   return (
